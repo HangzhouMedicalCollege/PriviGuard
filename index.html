@@ -1,1 +1,285 @@
-<h1>欢迎光临</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriviGuard - Product Introduction</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-item {
+            position: relative;
+            padding: 15px 20px;
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown a {
+            color: white;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .content button:hover {
+            background-color: #555;
+        }
+
+        .camera-image-container {
+            display: flex;
+
+            align-items: center;
+            margin: 20px 0;
+            width: 80%;
+            max-width: 800px;
+            /* 控制整个容器的最大宽度 */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .presentation-container {
+            display: flex;
+            flex-direction: row;
+            /* 保持整个容器横向排列 */
+            align-items: center;
+            margin: 20px 0;
+            width: 100%;
+
+
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            /* 保持整个容器竖向排列 */
+            align-items: center;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 600px;
+            /* 控制整个容器的最大宽度 */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            /* 控制图像的最大宽度 */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 10px;
+            /* 图像与文字之间的间距 */
+        }
+
+        .image-container .text {
+            display: flex;
+            /* 使文字与图像并排 */
+            flex-direction: column;
+            /* 文字部分竖向排列 */
+            width: 100%;
+            max-width: 300px;
+            /* 控制文字部分的最大宽度 */
+            padding: 10px;
+
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 页面底部样式 */
+        .footer {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: left;
+            font-size: 0.9em;
+            color: #666;
+            margin: 20px 40px;
+            width: 60%;
+        }
+
+        .footer h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .footer p {
+            line-height: 2;
+        }
+
+        @media (min-width: 768px) {
+            .image-container {
+                flex-direction: row;
+                /* 在大屏幕上将图像和文字横向排列 */
+                align-items: flex-start;
+            }
+
+            .image-container img {
+                margin-right: 20px;
+                /* 调整图像与文字之间的间距 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#">首页</a>
+                <div class="dropdown">
+                    <a href="#">关于我们</a>
+                    <a href="#">联系我们</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">产品目录</a>
+                <div class="dropdown">
+                    <a href="#">PriviGuard Pro</a>
+                    <a href="#">PriviGuard Basic</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">解决方案</a>
+                <div class="dropdown">
+                    <a href="#">家庭安全</a>
+                    <a href="#">企业隐私保护</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">关于我们</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">资讯</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">联系我们</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 页面内容 -->
+    <div class="content">
+
+        <h1>守护健康，守护安全，守护隐私——PriviGuard，智能生活的新选择</h1>
+        <p>PriviGuard 是一款专注于隐私保护的高科技产品。它通过先进的技术确保您的信息安全，同时为您提供全方位的隐私保护解决方案。</p>
+        <div class="camera-image-container">
+            <img src="camera.jpg" alt="Image 1">
+
+        </div>
+
+        <h2>产品特点</h2>
+
+    </div>
+
+    <!-- 图片和文字布局 -->
+    <div class="presentation-container">
+
+        <div class="image-container">
+            <img src="voice.jpg" alt="Image 1">
+            <div class="text">
+                <h3>声音守护：健康监测的先锋</h3>
+                <p>通过精准的声音识别技术，PriviGuard 能够监测咳嗽、打鼾等健康相关声音，为用户提供实时健康预警。</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="dongzuo.jpg" alt="Image 2">
+            <div class="text">
+                <h3>行为守护</h3>
+                <p>PriviGuard 的高精度动作识别功能可实时检测摔倒等异常行为，为家庭安全提供全方位守护。</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="presentation-container">
+        <div class="image-container">
+            <img src="AI.jpg" alt="Image 3">
+            <div class="text">
+                <h3>AI芯片</h3>
+                <p>P搭载最新的思元370 AI芯片，PriviGuard 实现了强大的本地数据处理能力，无需上传云端即可完成智能分析。</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="yinsi.jpg" alt="Image 4">
+            <div class="text">
+                <h3>隐私保护</h3>
+                <p>所有数据处理均在本地完成，结合先进的加密技术，PriviGuard 为用户提供了极致的隐私安全保障。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>关于我们</h3>
+        <p>我们是来自杭州医学院的创业兴趣小组，一群充满热情和创新精神的医学与科技爱好者。在学院的大力支持和相关校友企业的专业指导下，我们致力于将医学知识与前沿科技相结合，开发出真正能够改善人们生活的智能健康产品。</p>
+        <p>在开发 PriviGuard 的过程中，我们充分利用了杭州医学院在医学研究和临床实践方面的深厚积累，结合校友企业在人工智能和智能硬件领域的先进经验。通过无数次的实验、优化和用户反馈，PriviGuard
+            从一个创意逐渐成长为一款成熟的产品。</p>
+        <p>我们坚信，科技的力量可以改变生活，而医学的智慧可以拯救生命。PriviGuard 是我们迈出的第一步，未来我们将继续探索更多医学与科技的结合点，开发更多具有创新性和实用性的产品。</p>
+    </div>
+</body>
+
+</html>
